@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.5">
+  <POU Name="MAIN" Id="{0ac9e51b-c44e-44a0-8454-c4e92c9a0fca}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	T1: TON;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[T1(IN:=GVL1.Switch , PT:=T#5s , Q=>GVL1.Lamp );]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
